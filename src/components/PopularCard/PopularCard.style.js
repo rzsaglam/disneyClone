@@ -1,10 +1,10 @@
 import {StyleSheet} from 'react-native';
-import {metrics} from '../../utils/metrics';
+import {metrics, verticalScale} from '../../utils/metrics';
 
 export default StyleSheet.create({
   container: {
     flex: 1,
-    marginHorizontal: 5,
+    marginHorizontal: verticalScale(5),
   },
   poster: {
     height: '100%',

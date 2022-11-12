@@ -9,9 +9,6 @@ const MovieList = ({genre = 'action'}) => {
   useEffect(() => {
     getMoviesByGenre(genre).then(res => setMovies(res));
   }, [genre]);
-  useEffect(() => {
-    console.log(movies);
-  }, [movies]);
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{genre}</Text>
